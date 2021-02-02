@@ -1,0 +1,276 @@
+
+.wizcontainer {
+  margin-top: 40px;
+  padding: 0 0 30px;
+  position: relative;
+}
+
+.wizcontainer:before {
+  display: block;
+  width: 80%;
+  background: rgba(109, 109, 109, 0.09);
+  height: 3px;
+  position: absolute;
+  top: 40px;
+  content: "";
+  overflow: hidden;
+  left: 100px;
+}
+
+.wizcols {
+  width: 20%;
+}
+
+/* base */
+.wizstatebase {
+  background: #ececec;
+  border: 1px solid #bbb;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.wizstatebase-cancel {
+  background: #ff6d6d;
+  border: 1px solid #bbb;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.wizcontainer h4 {
+  color: #6d6d6d;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 18px;
+}
+
+.wizstatebase span {
+  display: none;
+}
+
+.wizstatebase svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -24px;
+  opacity: 0.3;
+}
+
+/* done */
+.wizstatedone {
+  background: #fff200;
+  border: 2px solid #6d6d6d;
+  position: relative;
+  color: #222;
+}
+
+.wizstatedone ~ h4,
+.wizstatetransit ~ h4 {
+  color: #222;
+}
+
+.wizstatetransit ~ h4 {
+  position: relative;
+  top: -24px;
+}
+
+.wizstatedone img {
+  opacity: 1;
+}
+
+.wizstatedone span,
+.wizstatebase-cancel span,
+.wizstatetransit span {
+      position: relative;
+    /* top: -6px; */
+    /* right: 2px; */
+    /* content: ""; */
+    display: block;
+    margin: auto;
+    text-align: center;
+    top: 15%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wizstatedone:before,
+.wizstatetransit:before {
+  display: block;
+  width: 25px;
+  background: #fff200;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  content: "";
+  overflow: hidden;
+  left: -25px;
+  border: 1px solid rgba(109, 109, 109, 0.83);
+  border-width: 1px 0;
+}
+
+.startstatus .wizstatedone:before, .hide-cancel, .hide-kirim {
+  display: none;
+}
+
+.show_kirim, .show_cancel{
+    display: block;
+}
+
+.wizstatedone:after {
+  display: block;
+  width: 290%;
+  background: #fff200;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  content: "";
+  overflow: hidden;
+  left: 100%;
+  border: 1px solid rgba(109, 109, 109, 0.83);
+  border-width: 1px 0;
+}
+
+.canceled:after {
+  display: block;
+  width: 290%;
+  background: #c1c1c1;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  content: "";
+  overflow: hidden;
+  left: 100%;
+  border-width: 1px 0;
+}
+
+/* transit */
+.wizstatetransit {
+  background: #fff200;
+  border: 2px solid #6d6d6d;
+  width: 104px;
+  height: 104px;
+  border-radius: 100%;
+  position: relative;
+  top: -12px;
+  z-index: 2;
+  box-shadow: 0 0 0 3px hsl(0, 0%, 100%), 0 0 0 5px rgba(151, 151, 151, 0.3);
+  box-sizing: border-box;
+}
+
+.wizstatetransit span {
+  width: 33px;
+  height: 33px;
+}
+
+.wizstatetransit:after {
+  display: block;
+  width: 25px;
+  background: #fff200;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  content: "";
+  overflow: hidden;
+  right: -25px;
+  border: 1px solid rgba(109, 109, 109, 0.83);
+  border-width: 1px 0;
+}
+
+.wizstatetransit img {
+  opacity: 1;
+  height: 63px;
+  width: 63px;
+  margin: -32px 0 0 -32px;
+}
+
+.wizstatedone.last:after{
+    display: none;
+}
+/* responsive css */
+@media (max-width: 767.98px) {
+    .wizcols.hide-cancel, .wizcols.hide-kirim {
+      display: none;
+    }
+    .show_kirim, .show_cancel{
+        display: flex;
+    }
+  .wizcols {
+    width: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .wizstatebase {
+    float: left;
+    margin: 0;
+  }
+
+  .wizcontainer {
+    margin: 40px auto 0;
+    max-width: 260px;
+  }
+
+  .wizcontainer:before {
+    width: 3px;
+    height: 80%;
+    left: 54px;
+  }
+
+  .wizstatedone:after {
+    top: 100%;
+    left: 50%;
+    height: 53px;
+    width: 3px;
+    border-width: 0 1px;
+  }
+
+  .canceled:after {
+    top: 100%;
+    left: 50%;
+    height: 53px;
+    width: 3px;
+    border-width: 0 1px;
+  }
+
+  .wizstatedone:before,
+  .wizstatetransit:before {
+    top: -10px;
+    left: 50%;
+    height: 10px;
+    width: 3px;
+    border-width: 0 1px;
+  }
+
+  .wizstatetransit {
+    left: -12px;
+    top: 0;
+  }
+
+  .wizstatetransit:after {
+    top: 100%;
+    left: 50%;
+    height: 25px;
+    width: 3px;
+    border-width: 0 1px;
+  }
+
+  .wizcontainer h4,
+  .wizstatebase  ~ h4,
+  .wizstatebase-cancel  ~ h4 {
+    text-align: left;
+    margin: 0 0 0 50px;
+    top: auto;
+    max-width: 100px;
+  }
+
+  .wizstatetransit ~ h4 {
+    margin-left: 25px;
+    top: -12px;
+  }
+}

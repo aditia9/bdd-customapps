@@ -1,0 +1,169 @@
+body{
+	background-color: #F4F6F8;
+}
+.btn-print, .areaPrint{
+	display: none;
+}
+table, th, td{
+	vertical-align: middle !important;
+}
+table{
+	font-size: 15px !important;
+	border-bottom: 1px solid #ddd !important;
+}
+th{
+	border-top : 0px !important;
+	border-bottom: 0px !important;
+}
+table td{
+	padding : 18px 15px !important;
+}
+table th{
+	padding : 20px 15px !important;
+}
+.address, .padding-item, span.date-print, span.invoice {
+    font-size: 14px !important;
+}
+.center-column{
+	text-align: center !important;
+}
+.right-column{
+	text-align: right !important;
+}
+.text-hastag{
+	font-weight: bold;
+	color: #1269DB;
+}
+.vendor{
+	vertical-align: top;
+	text-transform: capitalize;
+	font-size: 25px !important;
+	font-weight: bold;
+}
+.item-details{
+	font-weight: bold;
+	font-size: 20px !important;
+	text-transform: capitalize;
+	vertical-align: top;
+}
+.shipping-details{
+	font-weight: bold;
+	font-size: 20px !important;
+	text-transform: capitalize;
+	vertical-align: top;
+}
+.shipping-name{
+	font-weight: bold;
+	font-size: 18px !important;
+	text-transform: uppercase;
+	vertical-align: top;
+	color: red;
+}
+.shipping-address-name{
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.row{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.col-print{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.address{
+	margin-bottom: 0 !important;
+}
+.padding-address{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.padding-item{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.header-app a.navbar-brand{
+	margin: auto;
+}
+.box-table{
+	width: 75%;
+}
+.rounded-box-table{
+	border-radius: 10px;
+}
+.payment-paid, .payment-nonpaid, .name-customer{
+	text-transform: capitalize;
+}
+.dataTables_paginate{
+	padding-top: 2.5% !important;
+}
+@media screen and(max-width : 900px){
+	.dataTables_wrapper{
+		overflow-x: scroll;
+	}
+	.box-table{
+		width: 100%;
+	}
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #007bff!important;
+    background-color: #007bff!important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007bff), color-stop(100%, #007bff))!important;
+    background: -webkit-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -moz-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -ms-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -o-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: linear-gradient(to bottom, #007bff 0%, #007bff 100%)!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    color: white !important;
+    border: 1px solid #007bff!important;
+    background-color: #007bff!important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007bff), color-stop(100%, #007bff))!important;
+    background: -webkit-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -moz-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -ms-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -o-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: linear-gradient(to bottom, #007bff 0%, #007bff 100%)!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: white !important;
+    border: 1px solid #007bff!important;
+    background-color: #007bff!important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007bff), color-stop(100%, #007bff))!important;
+    background: -webkit-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -moz-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -ms-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: -o-linear-gradient(top, #007bff 0%, #007bff 100%)!important;
+    background: linear-gradient(to bottom, #007bff 0%, #007bff 100%)!important;
+}
+.paginate_button.previous.disabled:hover, .paginate_button.next.disabled:hover{
+	background-color: white !important;
+	border : 1px solid white !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, white))!important;
+    background: -webkit-linear-gradient(top, white 0%, white 100%)!important;
+    background: -moz-linear-gradient(top, white 0%, white 100%)!important;
+    background: -ms-linear-gradient(top, white 0%, white 100%)!important;
+    background: -o-linear-gradient(top, white 0%, white 100%)!important;
+    background: linear-gradient(to bottom, white 0%, white 100%)!important;
+}
+.dataTables_filter label input{
+	border-radius: 4px !important;
+    border: 1px solid lightgrey !important;
+    padding: 5px !important;
+}
+.dataTables_length select{
+	border: 1px solid lightgrey !important;
+	border-radius: 4px !important;
+	padding: 6px !important;
+}
+.select-multi{
+	display: none;
+}
+.hide-back-a{
+	display: none;
+}
+.border-pemisah{
+	border : 2px dotted black;
+}

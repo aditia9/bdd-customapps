@@ -1,0 +1,4 @@
+[03-Jan-2019 01:36:20 Asia/Jakarta] PHP Warning:  require_once(index.php): failed to open stream: No such file or directory in /home/hotelra1/public_html/assets/cron.php on line 36
+[03-Jan-2019 01:36:20 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required 'index.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/hotelra1/public_html/assets/cron.php on line 36
+[03-Jan-2019 01:36:51 Asia/Jakarta] PHP Warning:  require_once(index.php): failed to open stream: No such file or directory in /home/hotelra1/public_html/assets/cron.php on line 36
+[03-Jan-2019 01:36:51 Asia/Jakarta] PHP Fatal error:  require_once(): Failed opening required 'index.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/hotelra1/public_html/assets/cron.php on line 36
